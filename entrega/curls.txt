@@ -2,9 +2,24 @@
 
 ## GET /poleras
 
+{
+    "statusCode": 200,
+    "body": "\"Hello from Lambda!\""
+}
 
 ## GET /partidos
 
+{
+    "statusCode": 200,
+    "headers": {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*"
+    },
+    "body": "{\"partidos\":[],\"total\":0}"
+}
 
 ## GET /partidos/partido-001
 
+{
+    "error": "Partido no encontrado"
+}
