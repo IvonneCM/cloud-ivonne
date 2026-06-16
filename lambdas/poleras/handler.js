@@ -17,7 +17,7 @@ exports.handler = async () => {
     .filter((obj) => /\.(png|jpg|jpeg|svg)$/i.test(obj.Key))
     .map((obj) => ({
       archivo: obj.Key.split("/").pop(),
-      url: `https://${BUCKET_NAME}.s3.amazonaws.com/${obj.Key}`,
+      url: `https://mundial-poleras-colque-ivonne.s3.amazonaws.com/${obj.Key}`,
     }));
 
   return {
